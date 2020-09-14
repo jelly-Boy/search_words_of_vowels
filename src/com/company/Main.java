@@ -21,7 +21,7 @@ public class Main {
         return (a.length() <= word_size);
     };
 
-    static boolean checkForМowels(String a){
+    static boolean checkForVowels(String a){
         Boolean b = false;
         char[] arr = a.toCharArray();
         for(int i =1; i<arr.length; i++) {
@@ -62,7 +62,7 @@ public class Main {
                 else {
                     if(!(checkLength(word)))
                         word = word.substring(0, 31);
-                    if(checkForМowels(word)) {
+                    if(checkForVowels(word)) {
                         if (!(answer.contains(word))) {
                             answer = answer + word;
                         }
