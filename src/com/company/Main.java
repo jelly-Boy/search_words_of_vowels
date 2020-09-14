@@ -78,7 +78,7 @@ public class Main {
                 }
                 else {
                     if(!(checkLength(word))) {
-                        word = word.substring(0, 30);
+                        word = word.substring(0, 31);
                     }
                     if(checkForVowels(word)) {
                         if(!(inAnswer(answer, word)))
