@@ -37,7 +37,7 @@ public class Main {
     static boolean inAnswer(String [] a, String b){
         for (int i = 0;i< a.length;i++)
         {
-            if(b == a[i])
+            if(b.equals(a[i]))
                 return true;
         }
         return false;
@@ -78,7 +78,7 @@ public class Main {
                 }
                 else {
                     if(!(checkLength(word))) {
-                        word = word.substring(0, 31);
+                        word = word.substring(0, 30);
                     }
                     if(checkForVowels(word)) {
                         if(!(inAnswer(answer, word)))
